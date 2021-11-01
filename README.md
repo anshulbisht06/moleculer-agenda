@@ -2,6 +2,11 @@
 
 Job Scheduling Mixin for [Agenda](https://www.npmjs.com/package/agenda).
 
+![unittest](https://github.com/andreyunugro/moleculer-agenda/actions/workflows/unittest.yml/badge.svg)
+[![Coverage Status](https://coveralls.io/repos/github/andreyunugro/moleculer-agenda/badge.svg?branch=main)](https://coveralls.io/github/andreyunugro/moleculer-agenda?branch=main)
+[![Codacy Badge](https://app.codacy.com/project/badge/Coverage/9c7ab07463f94f2691cacecd42db8305)](https://www.codacy.com/gh/andreyunugro/moleculer-agenda/dashboard?utm_source=github.com&utm_medium=referral&utm_content=andreyunugro/moleculer-agenda&utm_campaign=Badge_Coverage)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/9c7ab07463f94f2691cacecd42db8305)](https://www.codacy.com/gh/andreyunugro/moleculer-agenda/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=andreyunugro/moleculer-agenda&amp;utm_campaign=Badge_Grade)
+
 ## Install
 
 ```sh
