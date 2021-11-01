@@ -1,0 +1,64 @@
+{
+  "name": "moleculer-agenda",
+  "version": "1.0.0",
+  "description": "Moleculer Framework Addons: Job Scheduling for Agenda",
+  "main": "index.js",
+  "scripts": {
+    "ci": "jest --watch",
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "lint": "eslint --ext=.js src test",
+    "deps": "npm-check -u",
+    "test": "jest --coverage",
+    "commit": "cz",
+    "release": "standard-version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreyunugro/moleculer-agenda.git"
+  },
+  "keywords": [
+    "moleculer",
+    "moleculerjs",
+    "agenda"
+  ],
+  "author": "Andreas Y Nugroho",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andreyunugro/moleculer-agenda/issues"
+  },
+  "homepage": "https://github.com/andreyunugro/moleculer-agenda#readme",
+  "devDependencies": {
+    "commitizen": "^4.2.4",
+    "coveralls": "^3.1.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "delay": "^5.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-jest": "^25.2.2",
+    "jest": "^27.3.1",
+    "moleculer": "^0.14.18",
+    "mongodb-memory-server": "^7.5.1",
+    "nodemon": "^2.0.14",
+    "npm-check": "^5.9.2",
+    "standard-version": "^9.3.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "agenda": "^4.2.1"
+  },
+  "files": [
+    "index.*",
+    "src/*"
+  ],
+  "engines": {
+    "node": ">= 12.22.x"
+  },
+  "peerDependencies": {
+    "moleculer": "^0.14.0"
+  }
+}
