@@ -93,6 +93,17 @@ module.exports = function createService(agendaConfig = {}) {
           return this.runEnable(name);
         },
       },
+
+      cancelJob: {
+        params: {
+          query: 'object',
+        },
+        handler({ params }) {
+          const { query } = params;
+          return this.cancelJob(query);
+        },
+      },
+
     },
 
     methods: {
@@ -166,6 +177,15 @@ module.exports = function createService(agendaConfig = {}) {
        */
       async runEnable(name) {
         return this.agenda.enable({ name });
+      },
+
+      /**
+       * Cancels any job that matches the query passed.
+       * @param {Object} query Mongodb's query.
+       * @returns {Promise<number>} if success returns num of rows removed (0 for no cancel operation)
+       */
+      async cancelJob(query) {
+        return this.agenda.cancel(query);
       },
     },
 
