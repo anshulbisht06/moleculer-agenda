@@ -128,6 +128,15 @@ Enables any job name, allowing job to be run.
 | -------- | ---- | ------- | ----------- |
 | `name` | `String` | **required** | Job name to enable. |
 
+### `cancelJob`
+
+Cancels jobs that matches the query passed. 
+
+#### Parameters
+| Property | Type | Default | Description |
+| -------- | ---- | ------- | ----------- |
+| `query` | `Object` | **required** | Mongodb's query. |
+
 <!-- AUTO-CONTENT-END:ACTIONS -->
 
 <!-- AUTO-CONTENT-TEMPLATE:ACTIONS
